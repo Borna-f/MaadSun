@@ -1,5 +1,6 @@
 # MaadSun
-This is a website for an advertisement business
+This is a website for an advertisement business.
+
 The purpose of publishing this website is for demonstrating my coding ability.
 
 # Run
