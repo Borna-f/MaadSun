@@ -1,0 +1,50 @@
+﻿@font-face {
+    font-family: EwaysYekan;
+    src: url('/Fonts/BYekan.ttf'), url('/Fonts/BYekan.woff'), url('/Fonts/BYekan.eot'); /* IE9 */
+}
+
+.ewaysyekan, label, .Vsum, .captcha, .login-header p {
+    font-family: EwaysYekan;
+}
+
+
+.logo
+{
+    background-color:#fff;
+    border: 1px solid red;
+    height:70px;
+    border-radius: 10px;
+}
+.logo img {
+        margin: 0px 0px 0px 0px;
+        width: auto;
+        max-height:100%;
+    }
+
+.center{
+    text-align:center;
+}
+
+.backgrnd{
+    background-color: #E6E9EA;
+    text-align: center;
+    padding: 10px 0 10px;
+    border-radius: 7px;
+}
+
+.mycontainer {
+    width: 970px;
+    margin: 0px auto;
+}
+
+
+/*input[type="text"]:focus {
+    border-color: #F37420 !important;
+    box-shadow: none;
+}*/
+
+
+input.btn-block[type="submit"] {
+    margin: 0 auto;
+    width: 260px;
+}

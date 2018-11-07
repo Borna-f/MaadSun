@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D51F75A0-D3B3-4B83-AC86-877652DA5694}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MaadSun</RootNamespace>
+    <AssemblyName>MaadSun</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\ViewUsers.aspx" />
+    <Content Include="bootstrap\css\bootstrap.css" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="CSS\CustomerLogin.css" />
+    <Content Include="CSS\flat-ui.min.css" />
+    <Content Include="CSS\ContactUs.css" />
+    <Content Include="CSS\MaadSun.css" />
+    <Content Include="Customer\CImage.aspx" />
+    <Content Include="Customer\Colleague.aspx" />
+    <Content Include="Customer\ContactUs.aspx" />
+    <Content Include="Customer\CustomerLogin.aspx" />
+    <Content Include="Customer\CustomerProfile.aspx" />
+    <Content Include="Customer\CustomerRegister.aspx" />
+    <Content Include="Customer\EditWebPage.aspx" />
+    <Content Include="Customer\Index.aspx" />
+    <Content Include="Customer\IndoorPrint.aspx" />
+    <Content Include="Customer\Services.aspx" />
+    <Content Include="Customer\UserWebPagePreview.aspx" />
+    <Content Include="Customer\WebService\Category.asmx" />
+    <Content Include="Customer\WebService\Image.asmx" />
+    <Content Include="Customer\WebService\User.asmx" />
+    <Content Include="fonts\Flat-UI-Icons.dev.svg" />
+    <Content Include="fonts\Flat-UI-Icons.svg" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\Contact-Us\address.png" />
+    <Content Include="images\Contact-Us\Fax.png" />
+    <Content Include="images\Contact-Us\phone.jpg" />
+    <Content Include="Javascript\Admin\ViewUsers.js" />
+    <Content Include="Javascript\Customer\ContactUs.js" />
+    <Content Include="Javascript\Customer\CustomerLogin.js" />
+    <Content Include="Javascript\Customer\CustomerMaster.js" />
+    <Content Include="Javascript\Customer\CustomerProfile.js" />
+    <Content Include="Javascript\Customer\CustomerRegister.js" />
+    <Content Include="Javascript\Customer\EditWebPage.js" />
+    <Content Include="Javascript\Customer\Index.js" />
+    <Content Include="Javascript\Customer\IndoorPrint.js" />
+    <Content Include="Javascript\Customer\Services.js" />
+    <Content Include="Javascript\JQUERY\bxslider\jquery.bxslider.css" />
+    <Content Include="Javascript\JQUERY\bxslider\jquery.bxslider.min.js" />
+    <Content Include="Javascript\JQUERY\JqGrid\grid.locale-fa.js" />
+    <Content Include="Javascript\JQUERY\JqGrid\jqGrid.min.js" />
+    <Content Include="Javascript\JQUERY\JqGrid\ui.jqgrid.css" />
+    <Content Include="Javascript\JQUERY\jquery-2.1.4.min.js" />
+    <Content Include="Javascript\JQUERY\jquery.validate.min.js" />
+    <Content Include="Javascript\JQUERY\jquerysession.js" />
+    <Content Include="Javascript\JQUERY\JqueryUI\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Javascript\JQUERY\JqueryUI\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Javascript\JQUERY\JqueryUI\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Javascript\JQUERY\JqueryUI\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Javascript\JQUERY\JqueryUI\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Javascript\JQUERY\JqueryUI\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Javascript\JQUERY\JqueryUI\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Javascript\JQUERY\JqueryUI\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Javascript\JQUERY\JqueryUI\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Javascript\JQUERY\JqueryUI\images\ui-icons_222222_256x240.png" />
+    <Content Include="Javascript\JQUERY\JqueryUI\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Javascript\JQUERY\JqueryUI\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Javascript\JQUERY\JqueryUI\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Javascript\JQUERY\JqueryUI\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Javascript\JQUERY\JqueryUI\jquery-ui.min.css" />
+    <Content Include="Javascript\JQUERY\JqueryUI\jquery-ui.min.js" />
+    <Content Include="Javascript\JQUERY\JqueryUI\jquery-ui.structure.css" />
+    <Content Include="Javascript\JQUERY\JqueryUI\jquery-ui.structure.min.css" />
+    <Content Include="Javascript\JQUERY\JqueryUI\jquery-ui.theme.css" />
+    <Content Include="Javascript\JQUERY\JqueryUI\jquery-ui.theme.min.css" />
+    <Content Include="Javascript\JQUERY\Menu\images\caret.png" />
+    <Content Include="Javascript\JQUERY\Menu\images\menu.png" />
+    <Content Include="Javascript\JQUERY\Menu\menu.css" />
+    <Content Include="Javascript\JQUERY\Menu\menu.js" />
+    <Content Include="Javascript\JQUERY\PhotoGrid\jquery.mosaicflow.min.js" />
+    <Content Include="Javascript\JQUERY\PhotoGrid\jquery.photoset-grid.min.js" />
+    <Content Include="Javascript\JQUERY\PhotoGrid\jquery.row-grid.min.js" />
+    <Content Include="Javascript\JQUERY\TextEditor\ckeditor.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\ViewUsers.aspx.cs">
+      <DependentUpon>ViewUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewUsers.aspx.designer.cs">
+      <DependentUpon>ViewUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\CImage.aspx.cs">
+      <DependentUpon>CImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\CImage.aspx.designer.cs">
+      <DependentUpon>CImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Colleague.aspx.cs">
+      <DependentUpon>Colleague.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\Colleague.aspx.designer.cs">
+      <DependentUpon>Colleague.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\CustomerLogin.aspx.cs">
+      <DependentUpon>CustomerLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\CustomerLogin.aspx.designer.cs">
+      <DependentUpon>CustomerLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\CustomerMaster.Master.cs">
+      <DependentUpon>CustomerMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\CustomerMaster.Master.designer.cs">
+      <DependentUpon>CustomerMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\CustomerProfile.aspx.cs">
+      <DependentUpon>CustomerProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\CustomerProfile.aspx.designer.cs">
+      <DependentUpon>CustomerProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\CustomerRegister.aspx.cs">
+      <DependentUpon>CustomerRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\CustomerRegister.aspx.designer.cs">
+      <DependentUpon>CustomerRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\EditWebPage.aspx.cs">
+      <DependentUpon>EditWebPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\EditWebPage.aspx.designer.cs">
+      <DependentUpon>EditWebPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\IndoorPrint.aspx.cs">
+      <DependentUpon>IndoorPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\IndoorPrint.aspx.designer.cs">
+      <DependentUpon>IndoorPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Services.aspx.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\Services.aspx.designer.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\UserWebPagePreview.aspx.cs">
+      <DependentUpon>UserWebPagePreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\UserWebPagePreview.aspx.designer.cs">
+      <DependentUpon>UserWebPagePreview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\WebService\Category.asmx.cs">
+      <DependentUpon>Category.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Customer\WebService\Image.asmx.cs">
+      <DependentUpon>Image.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Customer\WebService\User.asmx.cs">
+      <DependentUpon>User.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Customer\CustomerMaster.Master" />
+    <Content Include="fonts\BYekan.eot" />
+    <Content Include="fonts\BYekan.ttf" />
+    <Content Include="fonts\BYekan.woff" />
+    <Content Include="fonts\Flat-UI-Icons.eot" />
+    <Content Include="fonts\Flat-UI-Icons.ttf" />
+    <Content Include="fonts\Flat-UI-Icons.woff" />
+    <Content Include="fonts\icomoon-session.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MaadSun_Interface\MaadSun_Interface.csproj">
+      <Project>{7819161e-55b5-4093-85d1-e40e904b8b47}</Project>
+      <Name>MaadSun_Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MaadSun_Object\MaadSun_Object.csproj">
+      <Project>{f9a3cd2c-25cb-45d8-ace0-31e16480a499}</Project>
+      <Name>MaadSun_Object</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2127</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2127/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

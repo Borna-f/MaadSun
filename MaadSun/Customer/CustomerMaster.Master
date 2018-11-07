@@ -1,0 +1,192 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CustomerMaster.master.cs" Inherits="MaadSun.Customer.CustomerMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>گروه طراحان آفتاب ماد</title>
+    
+    <script type="text/javascript" src="/Javascript/JQUERY/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="/Javascript/JQUERY/jquerysession.js"></script>
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="/Javascript/JQUERY/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/Javascript/JQUERY/JqueryUI/jquery-ui.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/Javascript/JQUERY/JqueryUI/jquery-ui.min.css"/>
+    <link type="text/css" rel="stylesheet" href="/Javascript/JQUERY/JqueryUI/jquery-ui.theme.min.css"/>
+
+
+    
+
+    <script type="text/javascript" src="/Javascript/JQUERY/Menu/menu.js"></script>
+    <link type="text/css" rel="stylesheet" href="/Javascript/JQUERY/Menu/menu.css"/>
+
+    <link type="text/css" rel="stylesheet" href="/bootstrap/css/bootstrap.css"/>
+    <link type="text/css" rel="stylesheet" href="/CSS/MaadSun.css"/>
+
+    <link href="/css/flat-ui.min.css" rel="stylesheet" />
+    <link href="/css/CustomerLogin.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="/Javascript/Customer/CustomerMaster.js"></script>
+
+    <style>
+    
+    </style>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+       
+     
+    <div id="header">
+        <div class="container">
+            <%--<div id="logo" class="alignright">
+            <a href='Index.aspx'><img src="/images/logo-0.png" alt="MaadSun-Logo" width="100" height="72"/></a>
+            </div>--%>
+            
+            <asp:panel ID="LoginPanel" runat="server">
+            <div class="alignleft">
+            
+                 
+             <div id="Login-Register">
+        <div class="login">
+
+                
+                <div class="control-group">
+                <input id="txtUserName" type="text" placeholder="نام کاربری" class="Text LoginTxBx" 
+                    style="margin-bottom:5px; padding: 0px; font-size:15px; width:115px" tabindex="1"/>
+
+                
+                    <label for="login-name" class="login-field-icon fui-user"></label>
+                </div>
+                 <div class="control-group">
+                 <input id="txtPassword" type="password" placeholder="کلمه عبور" class="Text LoginTxBx"
+                      style="margin-bottom:5px; padding: 0px; font-size:15px; width:115px" tabindex="2"/>
+
+                 
+                    <label for="login-pass" class="login-field-icon fui-lock"></label>
+                </div>
+            
+            <div>
+            <a onclick="forgotten()" style="cursor:pointer"><span>کلمه عبور خود را فراموش کرده ام</span></a>
+            </div>
+            <input type="button" class="btn btn-login btn-large"
+                style="padding:0px; width:50px; direction:rtl" value="عضویت" onclick="CustomerRegister()"/>
+
+
+            <input type="button" class="btn btn-login btn-large"
+                style="padding:0px; width:50px; direction:rtl" value="ورود" onclick="Login()" tabindex="3"/>
+
+            
+    <%--            <asp:Button ID="Button1" runat="server" Text="ورود" OnClick="btnCustomerLogin_click" CssClass="btn btn-login btn-large btn-block" Style="margin-bottom:10px" />--%>
+            </div></div>
+                </div>
+           </asp:panel>
+        
+        
+        
+            <div id='cssmenu'>
+              <ul>
+                    <li><a href='/Customer/Index.aspx'><img src="/images/logo-0.png" alt="MaadSun-Logo" width="100" height="72" style="margin-right:-45px"/></a>  </li>
+                    <li class='active'><a href='/Customer/Index.aspx'><span>صفحه اصلی</span></a></li>
+               <%--     <li class='has-sub'><a href='#'><span>محصولات</span></a>   
+                <ul>
+                    <li><a href='IndoorPrint.aspx'><span>چاپ&nbspindoor</span></a></li>
+                    <li><a href='#'><span>چاپ&nbspoutdoor</span></a></li>
+                    <li class='last'><a href='#'><span>چاپ&nbspآفست</span></a></li>
+                </ul>
+                 </li>--%>
+                  <%--<asp:Panel ID="test" runat="server" Visible="false">--%>
+
+                 <%-- <li class='has-sub'><a href='#'><span>خدمات</span></a>   
+                      <ul>
+                    <li><a href='IndoorPrint.aspx'><span>چاپ&nbspindoor</span></a></li>
+                    <li><a href='#'><span>چاپ&nbspoutdoor</span></a></li>
+                    <li class='last'><a href='#'><span>چاپ&nbspآفست</span></a></li>
+                </ul>
+                    </li>--%>
+
+                  <li><a href='/Customer/Services.aspx'><span>خدمات</span></a></li>
+
+                      <%--</asp:Panel>--%>
+                  <li><a href='/Customer/ContactUs.aspx'><span>تماس با ما</span></a></li>
+
+
+        <asp:panel ID="CustomerPanel" runat="server" CssClass="Hidden">
+            <li class="has-sub"><a href='#'><span>حساب من</span></a>
+                <ul>
+                    <li><span><a href='CustomerProfile.aspx'>تنظمات کاربری</a></span></li>
+                    <li><span><a href='EditWebPage.aspx'>تنظیمات&nbspصفحه&nbspوب</a></span></li>
+                    <li><span><a href='UserWebPagePreview.aspx'>پیش&nbspنمایش&nbspصفحه&nbspوب</a></span></li>
+                    <li><span><asp:LinkButton runat="server" ID="CloseSession" text="خروج" OnClick="CloseSession_Click"></asp:LinkButton></span></li>
+                </ul>
+             </li>
+        </asp:panel>
+
+        <asp:panel ID="AdminPanel" runat="server" CssClass="Hidden">
+            <li class="has-sub"><a href='#'><span>حساب من</span></a>
+                <ul>
+
+                    <li><span><a href='/Customer/CustomerProfile.aspx'>تنظمات کاربری</a></span></li>
+                    <li><span><a href='/Customer/EditWebPage.aspx'>تنظیمات&nbspصفحه&nbspوب</a></span></li>
+                    <li><span><a href='/Customer/UserWebPagePreview.aspx'>پیش&nbspنمایش&nbspصفحه&nbspوب</a></span></li>
+                    <li><span><a href='/Admin/ViewUsers.aspx'>نمایش کاربران</a></span></li>
+                    <li><span><asp:LinkButton runat="server" ID="LinkButton1" text="خروج" OnClick="CloseSession_Click"></asp:LinkButton></span></li>
+                </ul>
+             </li>
+        </asp:panel>
+
+
+
+     <%--       <li class='has-sub'><a href='#'><span>درباره ی ما</span></a>
+                <ul>
+                    <li><a href='Index.aspx#about-us'><span>درباره&nbspی&nbspشرکت&nbspطراحان&nbspآفتاب&nbspماد</span></a></li>
+                    <li class='last'><a href='Index.aspx#contact-us'><span>تماس با ما</span></a></li>
+                 </ul>
+            </li>--%>
+            <%--<li class='last'><a href='#'><span>Contact</span></a></li>--%>
+        </ul>
+</div>
+            <div id="forgottendialog" style="direction:rtl">
+
+                <span> لطفا نام کاربری و یا ایمیل خود را وارد نمایید</span>
+
+                <div class="InputLabel">
+                    <span>نام کاربری</span>
+                </div>
+                
+                <input type="text" id="txtUsernameforgotten" name="txtUsernameforgotten" placeholder="نام کاربری" class="login-field" style="margin-bottom:10px; direction:rtl"/>
+                
+                <div class="InputLabel">
+                      <span>ایمیل</span>
+                </div>
+                
+                    <input type="text" id="txtEmailforgotten" name="txtEmailforgotten" placeholder="Email" class="login-field" style="margin-bottom:10px;"/>                
+                
+                <%--<div>
+                <input type="button" class="btn btn-login btn-large btn-block"
+                style="width:auto; display:inline-block; margin:auto" value="تایید" onclick="SendForgottenEMail()"/>
+                </div>--%>
+
+            </div>
+        </div>
+         </div>
+        <asp:ContentPlaceHolder ID="body" runat="server">
+        </asp:ContentPlaceHolder>
+
+     <%--   <asp:panel ID="User" runat="server" Visible="false">
+            <span>خوش آمدید</span>
+        </asp:panel>--%>
+        <div class="Text Center" style="padding-bottom:10px">
+            <hr/>
+            تمامی حقوق این سایت متعلق به گروه طراحان آفتاب ماد می باشد
+        </div>
+
+
+    </form>
+</body>
+</html>
